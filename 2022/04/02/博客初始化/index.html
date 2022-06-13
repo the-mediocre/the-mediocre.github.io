@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="安装nodecnpm install hexo -g创建文件夹，hexo inithexo s 运行hexo g产生静态资源hexo clean 打扫hexo d 上传repo：git地址hexo new page “文件名”hexo new “博客名”shell命令 vi 文件名 ls -list markdown使用   功能 快捷键    标题1~6 ctrl1~6（清除是Ctrl+0（回到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客初始化">
+<meta property="og:url" content="http://example.com/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96/index.html">
+<meta property="og:site_name" content="BLOG">
+<meta property="og:description" content="安装nodecnpm install hexo -g创建文件夹，hexo inithexo s 运行hexo g产生静态资源hexo clean 打扫hexo d 上传repo：git地址hexo new page “文件名”hexo new “博客名”shell命令 vi 文件名 ls -list markdown使用   功能 快捷键    标题1~6 ctrl1~6（清除是Ctrl+0（回到">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-03T00:12:52.000Z">
+<meta property="article:modified_time" content="2022-06-13T02:37:48.979Z">
+<meta property="article:author" content="The-mediocre">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="nrm">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96/","path":"2022/04/02/博客初始化/","title":"博客初始化"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>博客初始化 | BLOG</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">BLOG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">会当临绝顶，一览众山小</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node"><span class="nav-number">1.</span> <span class="nav-text">安装node</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cnpm-install-hexo-g"><span class="nav-number">2.</span> <span class="nav-text">cnpm install hexo -g</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8Chexo-init"><span class="nav-number">3.</span> <span class="nav-text">创建文件夹，hexo init</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-s-%E8%BF%90%E8%A1%8C"><span class="nav-number">4.</span> <span class="nav-text">hexo s 运行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-g%E4%BA%A7%E7%94%9F%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90"><span class="nav-number">5.</span> <span class="nav-text">hexo g产生静态资源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-clean-%E6%89%93%E6%89%AB"><span class="nav-number">6.</span> <span class="nav-text">hexo clean 打扫</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-d-%E4%B8%8A%E4%BC%A0"><span class="nav-number">7.</span> <span class="nav-text">hexo d 上传</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#repo%EF%BC%9Agit%E5%9C%B0%E5%9D%80"><span class="nav-number">8.</span> <span class="nav-text">repo：git地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-new-page-%E2%80%9C%E6%96%87%E4%BB%B6%E5%90%8D%E2%80%9D"><span class="nav-number">9.</span> <span class="nav-text">hexo new page “文件名”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-new-%E2%80%9C%E5%8D%9A%E5%AE%A2%E5%90%8D%E2%80%9D"><span class="nav-number">10.</span> <span class="nav-text">hexo new “博客名”</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#markdown%E4%BD%BF%E7%94%A8"><span class="nav-number">10.0.1.</span> <span class="nav-text">markdown使用</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">The-mediocre</p>
+  <div class="site-description" itemprop="description">人们愿意相信一个土匪叫张麻子，而不愿意相信他叫张牧之</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/02/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="The-mediocre">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BLOG">
+      <meta itemprop="description" content="人们愿意相信一个土匪叫张麻子，而不愿意相信他叫张牧之">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="博客初始化 | BLOG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客初始化
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-03 00:12:52" itemprop="dateCreated datePublished" datetime="2022-04-03T00:12:52Z">2022-04-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-13 02:37:48" itemprop="dateModified" datetime="2022-06-13T02:37:48Z">2022-06-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>710</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h4><h4 id="cnpm-install-hexo-g"><a href="#cnpm-install-hexo-g" class="headerlink" title="cnpm install hexo -g"></a>cnpm install hexo -g</h4><h4 id="创建文件夹，hexo-init"><a href="#创建文件夹，hexo-init" class="headerlink" title="创建文件夹，hexo init"></a>创建文件夹，hexo init</h4><h4 id="hexo-s-运行"><a href="#hexo-s-运行" class="headerlink" title="hexo s 运行"></a>hexo s 运行</h4><h4 id="hexo-g产生静态资源"><a href="#hexo-g产生静态资源" class="headerlink" title="hexo g产生静态资源"></a>hexo g产生静态资源</h4><h4 id="hexo-clean-打扫"><a href="#hexo-clean-打扫" class="headerlink" title="hexo clean 打扫"></a>hexo clean 打扫</h4><h4 id="hexo-d-上传"><a href="#hexo-d-上传" class="headerlink" title="hexo d 上传"></a>hexo d 上传</h4><h4 id="repo：git地址"><a href="#repo：git地址" class="headerlink" title="repo：git地址"></a>repo：git地址</h4><h4 id="hexo-new-page-“文件名”"><a href="#hexo-new-page-“文件名”" class="headerlink" title="hexo new page “文件名”"></a>hexo new page “文件名”</h4><h4 id="hexo-new-“博客名”"><a href="#hexo-new-“博客名”" class="headerlink" title="hexo new “博客名”"></a>hexo new “博客名”</h4><p>shell命令</p>
+<p>vi 文件名</p>
+<p>ls -list</p>
+<h6 id="markdown使用"><a href="#markdown使用" class="headerlink" title="markdown使用"></a>markdown使用</h6><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题1~6</td>
+<td>ctrl1~6（清除是Ctrl+0（回到正文））</td>
+</tr>
+<tr>
+<td>有序列表</td>
+<td>Ctrl+shift+[</td>
+</tr>
+<tr>
+<td>无序列表</td>
+<td>ctrl+shift+]</td>
+</tr>
+<tr>
+<td>表格</td>
+<td>Ctrl+t</td>
+</tr>
+<tr>
+<td>添加下一行表格</td>
+<td>Ctrl+ente</td>
+</tr>
+<tr>
+<td>代码块</td>
+<td>Ctrl+shift+k</td>
+</tr>
+</tbody></table>
+<p>nrm切换下载地址</p>
+<ol>
+<li>npm i nrm -g</li>
+<li>查看可选项 nrm ls</li>
+<li>改变下载来源  nrm use taobao</li>
+</ol>
+<p>webpack 初始化</p>
+<ol>
+<li><p>npm init -y</p>
+</li>
+<li><p>npm install webpack webpack-cli –save-dev</p>
+</li>
+<li><p>创建src文件夹,index.js,</p>
+</li>
+<li><pre><code class="js">///webpack.config.js
+const path= require(&quot;path&quot;);
+module.exports= &#123;
+    mode:&#39;development&#39;,
+    entry:path.join(__dirname,&#39;src&#39;,&#39;index.js&#39;),
+    output:&#123;
+        filename:&#39;bundle.js&#39;,
+        path:path.resolve(__dirname,&quot;./dist&quot;),
+    &#125;
+&#125;
+</code></pre>
+</li>
+<li><p>package.json里面的script中build:webpack</p>
+</li>
+<li><p>dist文件夹创建index.js,  引入bundle.js</p>
+</li>
+<li><p>npm run build(打包)</p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/nrm/" rel="tag"># nrm</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/04/02/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/" rel="prev" title="git常用命令">
+                  <i class="fa fa-chevron-left"></i> git常用命令
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/04/02/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/" rel="next" title="数组操作">
+                  数组操作 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">The-mediocre</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">71k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:04</span>
+  </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+
+</body>
+</html>
